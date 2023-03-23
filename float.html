@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float and clear</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .containers{
+            width: 900px;
+            border: 2px solid purple;
+            margin: 33px auto;
+            background-color: rgb(250, 214, 214);
+        }
+        .item{
+            border: 2px solid gray;
+            border-radius: 10px;
+            margin: 12px 3px;
+            padding: 12px 3px;
+            background-color: rgb(245, 238, 238);
+        }
+        #fruits{
+            float: left;
+            width: 48%;
+        }
+        #Computer{
+            float: right;
+            width: 48%;
+        }
+        #Stationary{
+            /* float: left; */
+            width: 100%;
+            clear: left;
+            clear: both;
+        }
+        h1{
+            margin: 33px auto;
+            width: 400px;
+        }
+    </style>
+</head>
+<body>
+    <div class="containers">
+        <h1>Welcome to my store</h1>
+        <div class="item" id="fruits">
+            <h3>Fruits</h3>
+            <p id="firstpara" class="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem et voluptates eveniet quasi corrupti sit quia vel aut beatae nostrum.</p>
+       </div>    
+        <div class="item" id="Computer">
+            <h3>Computer</h3>
+            <p id="secondpara" class="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem et voluptates eveniet quasi corrupti sit quia vel aut beatae nostrum.</p>
+       </div>    
+        <div class="item" id="Stationary">
+            <h3>Stationary</h3>
+            <p id="thirdpara" class="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem et voluptates eveniet quasi corrupti sit quia vel aut beatae nostrum.</p>
+       </div>    
+    </div>
+</body>
+</html>

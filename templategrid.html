@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating Layouts Using Grid Template Area | Web Development </title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-areas: 
+            'navbar navbar navbar navbar'
+            'sec sec sec aside'
+            'footer footer footer'
+            ;
+
+
+        }
+        .box{
+            background-color: yellow;
+            border: 2px solid red;
+        }
+        #navbar{
+            grid-area: navbar;
+        }
+        #aside{
+            grid-area: aside;
+        }
+        footer{
+            grid-area: footer;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="box" id="navbar">home contact us</div>
+    <section id="sec" class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam beatae numquam, quos recusandae quo unde minima quam nisi magni explicabo impedit doloremque itaque velit? Soluta consequatur fuga error et voluptates?</section>
+    <section id="aside" class="box">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod dignissimos totam obcaecati eligendi ea rerum magni, corporis ex cupiditate placeat? Veniam quo ad sunt iusto accusamus tenetur sed repellat et.</section>
+    </div>
+</body>
+</html>

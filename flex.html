@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex box</title>
+    <style>
+        .container{
+            width: 100%;
+            height: 544px;
+            border: 2px solid black;
+            display: flex;
+            /* flex properties for container */
+            /*1. Flex direction is always in rows default condition*/
+            /* flex-direction: row; */
+            /* flex-direction: column; */
+            /* flex-direction: row-reverse;
+            flex-direction: column-reverse; */
+            /*2. default condition is no wrap */
+            /* flex-wrap: wrap; */
+            /*3. Flexflow = directiom and wrap is  */
+            flex-flow: row wrap;
+            justify-content: center;
+            /* 4.it allign the item in center */
+            /* justify-content: space-between; */
+            /* 5.it give space btween them */
+            /* justify-content: space-evenly; */
+            /* 6.it give to start to end */
+            /* justify-content: space-around; */
+            /* 7.it give half half space of box */
+            /* Vertically center */
+            /* align item will align the thing in vertically by defualt is flex start */
+            /* align-items: center; */
+            /* align-items: flex-end; */
+            /* align-items: stretch; */
+            
+        }
+        .item{
+            background-color: tomato;
+            margin: 10px;
+            padding: 10px;
+            border: 5px solid black;
+            width: 200px;
+            height: 200px;
+        }
+        #item-1{
+            /* Flex properties for file */
+            /* order: 2; */
+            /* flex-grow: 20; */
+            /* Flex grow help us to determine the increase widht with zoom in */
+            /* Flex shrink is inverse to flex grow*/
+            /* flex-shrink: 3; */
+            flex-basis: 320px;
+            /* when flex direction is set to row the flex basis will be width */
+            /* when flex direction is set to column the flex basis will be height */
+            /* Flex : flex-grow flex-stretch flex-basis*/
+            align-self: flex-end;
+            /* align-self: is basically the types of align-item but it only applies on self */
+        }
+        #item-2{
+            /* Flex properties for file */
+            /* Higher the order , it will show up later */
+            /* order: 32; */
+            /* Flex grow help us to determine the increase widht with zoom in */
+            /* flex-grow: 21; */
+        }
+    </style>
+</head>
+<body>
+    <h1>This is flex box tutorial </h1>
+    <div class="container">
+        <div class="item" id="item-1">First Box</div>
+        <div class="item" id="item-2">Second Box</div>
+        <div class="item" id="item-3">Third box</div>
+        <div class="item" id="item-4">Fourth box</div>
+        <div class="item" id="item-5">Fifth box</div>
+        <div class="item" id="item-6">Sixth box</div>
+    </div>
+</body>
+</html>

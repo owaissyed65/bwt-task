@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="selector.css">
+    <title>Selector in css</title>
+    <style>
+        #myparagraph{
+            color: violet;
+                 }
+                 /* . is for class selector */
+                 /* # is for id selector */
+        .foot,.myclass,#myid{
+            background-color: aquamarine;
+        }
+        p{
+            background-color: azure;      
+        }
+    </style> 
+
+</head>
+<body>
+    <h3>Selector In Css</h3>
+    <div>
+    <p id="myparagraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est, dolor, necessitatibus, ad laborum nemo officiis unde repellat at quod animi ducimus voluptatem sint.</p>
+    </div>
+    <div>
+        <p id="mp">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quos id eaque eum et, eos doloribus enim voluptates repudiandae at!
+        </p>
+    </div>
+    <div>
+        <p class="secondpara">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem doloribus cum non quibusdam ex nihil impedit deserunt accusantium necessitatibus voluptatem.
+        </p>
+    </div>
+    <div>
+        <p class="secondpara" id="new">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ipsam voluptates minima aperiam nobis eum rem et provident facere aliquam!
+        </p><br>
+        <span class="foot" id="noid">Lorem ipsum dolor sit amet. this is span</span>
+    </div>
+    <span id="myid">Lorem, ipsum dolor.this is another span</span>
+
+    <footer class="myclass">This is footer</footer>
+    <div>
+        <p>hello</p>
+    </div>
+
+</body>
+</html>

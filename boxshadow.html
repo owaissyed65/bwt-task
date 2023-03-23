@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box shadow and text shadow</title>
+    <style>
+        .container{
+            display: flex;
+            
+        }
+        .card{
+            margin: 5px;
+            padding: 5px;
+            border:2px solid red;
+            background-color: rgb(247, 216, 216);
+            /* box-shadow: -10px 13px 12px 34px rgb(138, 111, 111 ,0.3) ; */
+            /* box-shadow: inset It enter into the box 13px 31px; */
+            box-shadow: 23px 23px green,34px 35px yellow;
+            /* Box shadow = x , y,blur radius,spreadcolor color */
+            /* Text-shadow same as box shadow */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card" id="card-1">
+            <h2>Card 1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur perferendis amet, omnis, earum asperiores error sunt minima soluta fugit magni inventore! Quam sunt cum neque explicabo, quis iste qui quos temporibus alias molestiae magnam.</p>
+        </div>
+        <div class="card" id="card-2">
+            <h2>Card 2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem fugit dolore, illum laborum optio libero veritatis, exercitationem repudiandae possimus neque asperiores debitis accusantium eum id commodi, quaerat ea placeat vero minima cum incidunt dolorem?</p>
+        </div>
+        <div class="card" id="card-3">
+            <h2>Card 3</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore fugit molestiae culpa sed eaque qui, ratione itaque reiciendis repellendus maxime mollitia non temporibus illo ex blanditiis rem libero ipsum at facere! Non, nulla iste?
+            </p>
+        </div>
+    </div>
+</body>
+</html>

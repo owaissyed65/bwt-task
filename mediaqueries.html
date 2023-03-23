@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Media Quaries</title>
+        <style>        
+        .container{
+
+            background-color: red;
+            display: none;
+        }
+        .item1{
+            text-align: center;
+            font-size: 73px;
+            color: white;
+        }
+        
+        @media only screen(max-width:500px)
+        {
+            .container{
+
+                display: block;
+                background-color: rgb(214, 248, 18);
+            }
+            
+            
+        }
+        
+        @media(max-width:500px) and (min-width:300px)
+        {
+        .container{
+            display: block;
+            background-color: aquamarine;
+            
+
+        }
+        }
+    </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="item1" id="item11">I am Iphone</div>
+            <div class="item1" id="item22">I am Smartphone</div>
+            <div class="item1">I am Computer</div>
+            <div class="item1">I am Widescreen Computer</div>
+        </div>
+
+    </body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+</head>
+<body>
+    <div>Hello</div>
+    <script>
+        // Block scope
+        let a = "Hello";
+        {
+            let a = "Hello bhai";
+            console.log(a);
+        }
+        console.log(a);
+        //let a1 = prompt("hello age enter")
+        //a1 = Number.parseInt(a1)
+        //console.log(typeof a1)
+        //let a = "u4"
+        let b = {
+            name : "Owais",
+            Section : "C"
+        }
+        b['Section'] = "b";
+        console.log(b)
+    
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Using Media Queries with CSS Grid | Web Development </title>
+        <style>
+        body{
+            background: rgb(174, 181, 184);
+            /* display: grid; */
+        }
+        @media only screen and(max-width:500px)
+        {
+        body{
+            background: rgb(223,53, 53);
+        }
+        .container{
+            grid-template-areas: 
+            'nav nav nav nav'
+            'section section section section'
+            'aside aside aside aside'
+            'footer footer footer footer' ;
+        }
+        }
+        @media only screen and (min-width:500px) and (max-width: 1000px){
+            body{
+                background: rgb(220, 223, 53);
+            }
+            /* .container{
+            /* display: grid; 
+            */
+            /* grid-template-areas: 
+            'nav nav nav nav'
+            'section section section section'
+            'aside aside aside aside'
+            'footer footer footer footer'
+            ;
+
+
+        } */ 
+        }
+        @media only screen and (min-width:1000px) and (max-width: 1500px){
+            body{
+                background: rgb(18, 240, 74);
+            }
+            /* .container{
+            /* display: grid; 
+            grid-template-areas: 
+            'nav nav nav nav'
+            'section section section section'
+            'aside aside aside aside'
+            'footer footer footer footer'
+            ;
+
+
+        } */
+        }
+        .container{
+            display: grid;
+            padding: 23px;
+            grid-gap:5px ;
+            grid-template-areas: 
+            'nav nav nav nav'
+            'section section section aside'
+            /* 'aside aside aside aside' */
+            'footer footer footer footer'
+            ;
+
+
+        }
+        .bdr{
+            background-color: yellow;
+            border: 2px solid black ;
+        }
+
+        nav{
+            grid-area: nav;
+        }
+        section{
+            grid-area: section;
+        }
+        aside{
+            grid-area: aside;
+        }
+        footer{
+            grid-area: footer;
+        }
+    </style>
+    </head>
+    <body>
+        <div class="container">
+            <nav class="bdr">
+                home about contact us
+            </nav>
+            <section class="bdr"><h2>
+                    learn css
+                </h2></section>
+            <aside class="bdr">
+                <h1>
+                    Our Service
+                </h1>
+            </aside>
+        </div>
+        <footer class="bdr">Copyright 2020</footer>
+    </body>
+</html>
