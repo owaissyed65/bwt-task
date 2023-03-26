@@ -1,0 +1,46 @@
+@import "./reset";
+$color: black;
+$font-weights: (
+    "regular": 500,
+    "bold": 700,
+);
+@function weight($weight-name) {
+    @return map-get($font-weights, $weight-name);
+}
+@mixin newCheck($direction) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $direction;
+}
+@mixin cond($condition) {
+    @if $condition {
+        background-color: yellow;
+    } 
+}
+body {
+    background-color: $color;
+    color: white;
+}
+.main {
+    width: 80%;
+    margin: 0 auto;
+    @include newCheck(column);
+    #{&}__paragraph1 {
+        font-weight: weight(bold);
+        &:hover {
+            color: pink;
+        }
+    }
+    #{&}__paragraph2 {
+        @extend  .main__paragraph1;
+        &:hover{
+            color: aqua;
+        }
+    }
+
+}
+.light {
+    @include cond(false)
+}
+
